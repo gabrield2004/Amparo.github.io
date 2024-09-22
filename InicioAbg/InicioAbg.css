@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #5F107B;
+}
+
+input::placeholder{
+    color: black;
+    
+}
+h1{
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-bottom: 3vh;
+}
+form{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: #C192E0;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+label, p{
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-weight: 350;
+}
+label {
+    color: inherit; /* Asegura que herede el color del contenedor */
+}
+
+p {
+    color: inherit; /* Asegura que herede el color del contenedor */
+}
+input{
+    padding: 17px 11px;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    background-color: #fafafc;
+    outline: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 17px;
+}
+.btn-1{
+    background-color: #280B4C;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+input[type="checkbox"] {
+    width: 40px; /* Aumenta el tamaño */
+    height: 25px;
+    border-radius: 100%; /* Hace el checkbox redondeado */
+    cursor: pointer;
+    position: relative;
+}
+
+section, .base {
+    color: #ffffff; /* Cambia el color de texto a blanco */
+    text-align: center; /* Centrar el texto dentro de la sección */
+    margin-top: 20px; /* Espacio superior para separar del formulario */
+}
+
+.base a {
+    font-weight: bolder;
+    color: #ffffff; /* Cambia a cualquier color que prefieras */
+    text-decoration: none; /* Elimina el subrayado si lo deseas */
+}
+
+/*Registro de abogados*/
+.registroAbg {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: stretch; /* Asegura que los elementos ocupen todo el espacio vertical */
+    justify-content: center;
+    height: 100vh; /* Altura completa de la ventana */
+    background-color: #ffFBE5;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%; /* Asegura que el contenedor ocupe toda la altura */
+}
+
+.imagenesabogado {
+    width: 50%; /* Ajusta al 50% del ancho */
+    height: 100%; /* Asegura que ocupe toda la altura */
+    object-fit: cover; /* Mantiene la proporción y cubre el espacio */
+    margin: 0; /* Remueve márgenes */
+}
+
+.registroAbgTexto, p {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.registroAbgTexto {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    padding: 20px; 
+    flex: 1; 
+    min-width: 300px; /* Asegura un ancho mínimo */
+}
+
+.h1Abog {
+    color: #5F107B;
+    text-align: left;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-bottom: 3vh;
+}
+
+.registroAbgTexto input {
+    padding: 17px 20px;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    background-color: #fafafc;
+    outline: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 17px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    max-width: 500px; /* Ajusta el tamaño máximo del input */
+}
+
+.registroAbgTexto .btn-1Abg {
+    background-color: #280B4C;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 200px;
+    border-color: #ffffff;
+    border-width: 2px;
+    padding: 15px;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .imagenesabogado {
+        display: none; /* Esconde la imagen en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .h1Abog {
+        font-size: 24px; /* Reducir tamaño del título */
+    }
+
+    .registroAbgTexto {
+        padding: 10px; /* Reducir padding */
+    }
+
+    .registroAbgTexto input {
+        padding: 10px; /* Ajustar padding de los inputs */
+        font-size: 14px; /* Reducir tamaño de fuente */
+    }
+
+    .registroAbgTexto .btn-1Abg {
+        width: 100%; /* Botón ocupa el 100% del ancho */
+        padding: 12px; 
+    }
+
+    .container {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        height: auto; /* Permitir que la altura se ajuste */
+    }
+
+    .registroAbgTexto {
+        flex: 1; /* Asegura que el formulario ocupe espacio */
+        min-width: 300px; /* Mantener un ancho mínimo */
+        justify-content: flex-start; /* Comenzar desde arriba */
+    }
+}
+
+
+/*Registro general de abogados*/
+/* Registro general psico */
+
+.contenedorainfo {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    margin-top: 20px;
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten en múltiples líneas */
+}
+
+.voluntuario, .Trabajador {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    flex: 1 1 200px; /* Ajusta el tamaño de cada columna */
+    margin: 10px; /* Espacio entre columnas */
+}
+
+.icono-registro {
+    width: 300px; 
+    height: auto; /* Mantiene la proporción */
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.icono-info {
+    width: 50px; 
+    height: 50px; 
+    margin: 10px 0;
+}
+
+.voluntuario h3, .Trabajador h3 {
+    font-size: 18px; 
+    font-weight: bolder;
+    color: #5F107B;
+    margin: 10px 0;
+}
+/* Ventana emergente - Modal */
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .7);
+    transition: all .4s;
+}
+
+.modal-content {
+    padding: 40px 20px;
+    position: relative;
+    width: 90%; /* Ajustar al 90% en dispositivos pequeños */
+    max-width: 550px; /* Limitar el ancho máximo */
+    background: #c192e0; /* Fondo del modal */
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+    text-align: center;
+}
+
+.textos h2 {
+    color: #5F107B;
+}
+
+.textos p {
+    color: #fffbe5; /* Contraste con el fondo */
+    font-size: 16px;
+    margin: 20px 0; /* Separar el texto de los bordes */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    background: #5F107B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-btn a {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+    color: #fffbe5;
+}
+
+.close-btn a:hover {
+    color: orangered;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Media Queries para responsive design */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%; /* Mayor espacio en móviles */
+        padding: 20px; /* Reducir padding en móviles */
+    }
+
+    .textos h2 {
+        font-size: 20px; /* Ajustar tamaño del texto */
+    }
+
+    .textos p {
+        font-size: 14px; /* Ajustar tamaño del texto */
+    }
+}

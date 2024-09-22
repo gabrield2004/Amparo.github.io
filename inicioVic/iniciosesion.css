@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inicioVic{
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #5F107B;
+}
+
+input::placeholder{
+    color: black;
+    
+}
+h1{
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-bottom: 3vh;
+}
+form{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: #C192E0;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+label, p{
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-weight: 350;
+}
+label {
+    color: inherit; 
+}
+
+p {
+    color: inherit; 
+}
+input{
+    padding: 17px 11px;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    background-color: #fafafc;
+    outline: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 17px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.btn-1{
+    background-color: #280B4C;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+input[type="checkbox"] {
+    width: 40px; 
+    height: 25px;
+    border-radius: 100%; 
+    cursor: pointer;
+    position: relative;
+}
+
+section, .base {
+    color: #ffffff; 
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.base a {
+    font-weight: bolder;
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+/*Registro de victimas*/
+.registroVic {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: stretch; /* Asegura que los elementos ocupen todo el espacio vertical */
+    justify-content: center;
+    height: 100vh; /* Altura completa de la ventana */
+    background-color: #ffFBE5;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%; /* Asegura que el contenedor ocupe toda la altura */
+}
+
+.imagenesvictimas {
+    width: 50%; /* Ajusta al 50% del ancho */
+    height: 100%; /* Asegura que ocupe toda la altura */
+    object-fit: cover; /* Mantiene la proporción y cubre el espacio */
+    margin: 0; /* Remueve márgenes */
+}
+
+.registroVicTexto, p {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.registroVicTexto {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    padding: 20px; 
+    flex: 1; 
+    min-width: 300px; /* Asegura un ancho mínimo */
+}
+
+.h1Victima {
+    color: #5F107B;
+    text-align: left;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-bottom: 3vh;
+}
+
+.registroVicTexto input {
+    padding: 17px 20px;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    background-color: #fafafc;
+    outline: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 17px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    max-width: 500px; /* Ajusta el tamaño máximo del input */
+}
+
+.registroVicTexto .btn-1Vic {
+    background-color: #280B4C;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 200px;
+    border-color: #ffffff;
+    border-width: 2px;
+    padding: 15px;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .imagenesvictimas {
+        display: none; /* Esconde la imagen en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .h1Victima {
+        font-size: 24px; /* Reducir tamaño del título */
+    }
+
+    .registroVicTexto {
+        padding: 10px; /* Reducir padding */
+    }
+
+    .registroVicTexto input {
+        padding: 10px; /* Ajustar padding de los inputs */
+        font-size: 14px; /* Reducir tamaño de fuente */
+    }
+
+    .registroVicTexto .btn-1Vic {
+        width: 100%; /* Botón ocupa el 100% del ancho */
+        padding: 12px; 
+    }
+
+    .container {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        height: auto; /* Permitir que la altura se ajuste */
+    }
+
+    .registroVicTexto {
+        flex: 1; /* Asegura que el formulario ocupe espacio */
+        min-width: 300px; /* Mantener un ancho mínimo */
+        justify-content: flex-start; /* Comenzar desde arriba */
+    }
+}

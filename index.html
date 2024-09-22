@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amparo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="/images/logo.png" alt="">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#whoweare">Nosotros</a></li>
+                <li><a href="#colaboradores">Colaboradores</a></li>
+                <li><a href="#refugios">Refugios</a></li>
+                <li><a href="#contactanos">Contacto</a></li>
+            </ul>
+        </nav>     
+        <div class="botondeemergencia">
+            <a href="#myModal" class="btn"><button>Boton de Emergencia</button></a>
+            <div class="modal" id="myModal">
+                <div class="modal-content">
+                    <div class="close-btn">
+                        <a href="" class="model_close">&times;</a>
+                    </div>
+                    <div class="textos">
+                        <div class="text-button">
+                            <h2>PNP:</h2>
+                            <a href=""><button>105</button></a>
+                        </div>
+                        <div class="text-button">
+                            <h2>Bomberos:</h2>
+                            <a href=""><button>116</button></a>
+                        </div>
+                        <div class="text-button">
+                            <h2>Denuncia contra la violencia familiar y sexual:</h2>
+                            <a href=""><button>100</button></a>
+                        </div>
+                        <div class="text-button">
+                            <h2>EsSalud:</h2>
+                            <a href=""><button>014118000 Opción : 6</button></a>
+                        </div>
+                        <div class="text-button">
+                            <h2>Cruz Roja:</h2>
+                            <a href=""><button>01 266 0481</button></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <a href="/inicioVic/inicioVic.html" class="btn-2"><button>Sign In</button></a>   
+    </header>
+    <section class="apoyo" id="apoyo">
+        <div class="apoyo-content container">
+            <h1>Apoyo que
+                transforma: para mujeres  <span class="higlightapoyo">fuertes</span> y <span class="higlightapoyo">valientes</span>
+            </h1>
+            <p>
+                Forma parte de un espacio seguro y 
+                empoderador. Únete y da el primer paso
+                hacia un nuevo comienzo.
+            </p>
+            <a href="/inicioVic/inicioVic.html" class="btn-1"><button>Unirme!</button></a>
+        </div>  
+        <img src="/images/mapa.png" class="imgmapa">
+    </section>
+    <main class="whoweare" id="whoweare">
+        <div class="whoweare-content container">
+            <img src="/images/quienessomos.jpeg" class="imgquienesomos">
+            <div class="whowearetext">
+                <h2>¿Quienes Somos?</h2>
+                <br>
+                <br>
+                <p class="txt-p"> 
+                    Somos una plataforma dedicada al apoyo y empoderamiento de <span class="highlight">víctimas de violencia de género.</span class="highlight"> Nuestro compromiso es brindar un espacio <span>seguro, accesible y confidencial,</span> donde puedas encontrar asistencia legal y psicológica, acceso a líneas de emergencia y una red segura de refugios. 
+                    <br>
+                    <br>
+                    Utilizamos tecnología de encriptación avanzada para proteger la privacidad de nuestros usuarios, ofreciendo un espacio donde puedas sentirte escuchada, apoyada y acompañada en tu camino hacia una vida <span class="highlight">libre de violencia.</span>
+                </p>
+            </div>
+        </div>
+    </main>
+    
+    <section class="colaboradores" id="colaboradores">
+        <div class="colaboradores-content container">
+            <div class="colaboradores-text">
+                <h2>Colaboradores</h2>
+                <h3>Forma parte de nuestra red de apoyo!</h3>
+            </div>
+            
+            <div class="colaboradores-group">
+                <div class="colab-1">
+                    <h3>Psicologos</h3>
+                    <img src="/images/c1.jpeg" class="colaboradoresimg">
+                    <p>Consejeria y <br>apoyo emocional</p>
+                    <a href="/inicioPsi/inicioPsi.html"class="btn-1"><button>Unirse</button></a>
+                </div>
+                <div class="colab-2">
+                    <h3>Abogados</h3>
+                    <img src="/images/c2.jpeg" class="colaboradoresimg">
+                    <p>Asesoría y <br>apoyo legal</p>
+                    <a href="/InicioAbg/InicioAbg.html"class="btn-1"><button>Unirse</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="refugios" id="refugios">
+        <div class="refugios-content container">
+            <h2>Refugios</h2>
+            <div class="botonesrefugios">
+                <div class="select-container">
+                    <select id="departamento" class="combobox">
+                        <option value="" disabled selected>Departamento</option>
+                        <option value="lima">Lima</option>
+                        <option value="arequipa">Arequipa</option>
+                        <option value="cusco">Cusco</option>
+                    </select>
+                </div>
+                
+                <div class="select-container">
+                    <select id="distrito" class="combobox">
+                        <option value="" disabled selected>Distrito</option>
+                        <option value="san_juan">San Juan</option>
+                        <option value="cercado">Cercado de Lima</option>
+                        <option value="san_martin">San Martin de Porres</option>
+                    </select>
+                </div>
+                
+                <a href="#" class="btn-1"><button>Filtrar</button></a>
+            </div>
+            <div class="refugios-group">
+                
+                <div class="refug-1">
+                    <img src="/images/r1.jpg" class="refugioimg">
+                    <h3>Casa Refugio San Jose</h3>
+                    <p>Departamento: Lima <br>
+                        Distrito: San Juan <br>
+                        <br>
+                        Jirón Huánuco 239, San Juan <br>
+                        Telf: 01 633 5479
+                    </p>
+                    <a href="https://asociacionrefugiosanjose.com" class="btn-1"><button>Contactar</button></a>
+                </div>
+                <div class="refug-2">
+                    <img src="/images/r2.jpg" class="refugioimg">
+                    <h3>Mujeres Unidas</h3>
+                    <p>Departamento: Lima <br>
+                        Distrito: Cercado de Lima <br>
+                        <br>
+                        Av. Dos de Mayo 183, Cercado <br>
+                        Telf: 01 777 6457
+                    </p>
+                    <a href="https://mujeresunidas.org/es/emergency-shelter/" class="btn-1"><button>Contactar</button></a>
+                </div>
+                <div class="refug-3">
+                    <img src="/images/r3.jpg" class="refugioimg">
+                    <h3>ONG Vida Mujer</h3>
+                    <p>Departamento: Lima <br>
+                        Distrito: San Martin de Porres <br>
+                        <br>
+                        Jirón Arequipa 822, SMP <br>
+                        Telf: 01 333 5566
+                    </p>
+                    <a href="https://www.instagram.com/vidamujerpty/reels/" class="btn-1"><button>Contactar</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contactanos" id="contactanos">
+        <div class="contactanos-content container">
+            <div class="contactanos-texto">
+                <h2>Contáctanos</h2>
+                <h3>Apoyo y Soporte a nuestros usuarios</h3>
+            </div>
+            <div class="contactanos-group">
+                <div class="contacatanos-cuadro">
+                    <textarea name="message" cols="40" rows="14" placeholder="Mensaje" class="textarea"></textarea>
+                    
+                </div>
+                <div class="iconos">
+                    <div class="contactanos-redes-group">
+                        <a href="https://www.facebook.com/?locale=es_LA"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/?hl=es-es"><i class="fa-brands fa-square-instagram"></i></a>
+                        
+                    </div>
+                    <div class="contactanos-redes-group2">
+                        <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.tiktok.com/es/"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="lineasuperior">
+                <div class="redeslink">
+                    <a href="https://www.facebook.com/?locale=es_LA"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/?hl=es-es"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/es/"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div class="llamanoslink">
+                    <p>Llámanos:
+                        +51 962 789 345</p>
+                </div>  
+            </div>
+            
+            <div class="copylink"></div>
+                <p>© 2024 Amparo Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+</html>

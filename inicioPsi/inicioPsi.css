@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #5F107B;
+}
+
+input::placeholder{
+    color: black;
+    
+}
+h1{
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-bottom: 3vh;
+}
+form{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: #C192E0;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+label, p{
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-weight: 350;
+}
+label {
+    color: inherit; 
+}
+
+p {
+    color: inherit; /
+}
+input{
+    padding: 17px 11px;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    background-color: #fafafc;
+    outline: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 17px;
+}
+.btn-1{
+    background-color: #280B4C;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+input[type="checkbox"] {
+    width: 40px; 
+    height: 25px;
+    border-radius: 100%; 
+    cursor: pointer;
+    position: relative;
+}
+
+section, .base {
+    color: #ffffff; 
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.base a {
+    font-weight: bolder;
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+/*Registro Psicologos*/
+.registroPsi {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: stretch; 
+    justify-content: center;
+    height: 100vh; 
+    background-color: #ffFBE5;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%; 
+}
+
+.imagenespsicologo {
+    width: 50%; 
+    height: 100%;
+    object-fit: cover; 
+    margin: 0; 
+}
+
+.registroPsiTexto, p {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.registroPsiTexto {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    padding: 20px; 
+    flex: 1; 
+    min-width: 300px; 
+}
+
+.h1Psico {
+    color: #5F107B;
+    text-align: left;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-bottom: 3vh;
+}
+
+.registroPsiTexto input {
+    padding: 17px 20px;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    background-color: #fafafc;
+    outline: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 17px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+    max-width: 500px; 
+}
+
+.registroPsiTexto .btn-1Psi {
+    background-color: #280B4C;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 200px;
+    border-color: #ffffff;
+    border-width: 2px;
+    padding: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .imagenespsicologo {
+        display: none; 
+    }
+}
+
+@media (max-width: 480px) {
+    .h1Psico {
+        font-size: 24px; 
+    }
+
+    .registroPsiTexto {
+        padding: 10px;
+    }
+
+    .registroPsiTexto input {
+        padding: 10px; 
+        font-size: 14px;
+    }
+
+    .registroPsiTexto .btn-1Psi {
+        width: 100%; 
+        padding: 12px; 
+    }
+
+    .container {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    .registroPsiTexto {
+        flex: 1; 
+        min-width: 300px; 
+        justify-content: flex-start; 
+    }
+}
+
+
+/* Registro general psico */
+
+.contenedorainfo {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    margin-top: 20px;
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten en múltiples líneas */
+}
+
+.voluntuario, .Trabajador {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    flex: 1 1 200px; /* Ajusta el tamaño de cada columna */
+    margin: 10px; /* Espacio entre columnas */
+}
+
+.icono-registro {
+    width: 300px; 
+    height: auto; /* Mantiene la proporción */
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.icono-info {
+    width: 50px; 
+    height: 50px; 
+    margin: 10px 0;
+}
+
+.voluntuario h3, .Trabajador h3 {
+    font-size: 18px; 
+    font-weight: bolder;
+    color: #5F107B;
+    margin: 10px 0;
+}
+
+/* Ventana emergente - Modal */
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .7);
+    transition: all .4s;
+}
+
+.modal-content {
+    padding: 40px 20px;
+    position: relative;
+    width: 90%; /* Ajustar al 90% en dispositivos pequeños */
+    max-width: 550px; /* Limitar el ancho máximo */
+    background: #c192e0; /* Fondo del modal */
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+    text-align: center;
+}
+
+.textos h2 {
+    color: #5F107B;
+}
+
+.textos p {
+    color: #fffbe5; /* Contraste con el fondo */
+    font-size: 16px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    background: #5F107B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-btn a {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+    color: #fffbe5;
+}
+
+.close-btn a:hover {
+    color: orangered;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Media Queries para responsive design */
+@media (max-width: 768px) {
+    .icono-registro {
+        width: 80%; /* Ajustar el tamaño en pantallas pequeñas */
+    }
+
+    .voluntuario, .Trabajador {
+        flex: 1 1 100%; /* Cada columna ocupará todo el ancho */
+        margin: 10px 0; /* Espacio vertical */
+    }
+
+    .modal-content {
+        width: 95%; /* Mayor espacio en móviles */
+        padding: 20px; /* Reducir padding en móviles */
+    }
+
+    .textos h2 {
+        font-size: 20px; /* Ajustar tamaño del texto */
+    }
+
+    .textos p {
+        font-size: 14px; /* Ajustar tamaño del texto */
+    }
+}
